@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico"> 
+    <script src="js/main.js"></script>
+    <title>Моя личная страница</title>
+</head>
+<body onload="loadPreparings()">
+        <span id="about-me"></span>
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <div class="container-fluid header">
+            <a href="#" class="navbar-brand align-self-center">ME</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#about-me" class="nav-link active">Обо мне</a></li>
+                    <li class="nav-item"><a href="#favourite-films" class="nav-link">Любимые фильмы</a></li>
+                    <li class="nav-item"><a href="#my-city" class="nav-link">Мой город</a></li>
+                    <li class="nav-item"><a href="3dmodel.html" class="nav-link">Любимый проект</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    <div class="container-fluid">             
+        <div class="row style-changable">
+            <div class="col-12 col-sm-7 about">
+                <h1 id="name">Райваховский Николай Юрьевич</h1>
+                <p id="email">email: <a href="mailto:raivakhovskiy@gmail.com">raivakhovskiy@gmail.com</a></p>
+                <p>3 слова и одна запятая обо мне: студент ХПИ, филантроп</p>
+            </div>
+            <div class="col-12 col-sm-5 align-content-center" style="overflow: hidden;" id="mainPhoto">
+                <img src="img/Raivakhovskyi.jpg" id="main-photo" class="d-block mx-auto img-fluid" alt="Nickolay Raivakhovskiy">
+            </div>
+        </div>
+        <div class="row  style-changable">
+            <div class="col-120 col-sm-8 mx-auto">
+                <blockquote class="style-changable">
+                    <p>Keep calm and code :)</p>
+                    <footer>— <cite>Дух программиста</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row mood justify-content-center  style-changable">
+            <div class="col-sm-2">
+                <img src="img/Raivakhovskyi.jpg" alt="fun">
+                <p>грущу</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="img/Raivakhovskyi.jpg" alt="sad">
+                <p>радуюсь</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="img/Raivakhovskyi.jpg" alt="now">
+                <p>сейчас</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 no-padding" id="education">
+                <h3>Успеваемость</h3>
+            </div>
+            <div class="col-sm-8 no-padding">
+                <table>
+                    <tr>
+                        <th>№</th>
+                        <th>Дисциплина</th>
+                        <th>Оценка</th>
+                        <th>Преподаватель</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Архітектура обчислювальних систем</td>
+                        <td>98</td>
+                        <td>Ломакин А. Н.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Дискретна математика. Ч.2</td>
+                        <td>100</td>
+                        <td>Татаринова О. А.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Диференційні рівняння</td>
+                        <td>97</td>
+                        <td>Михлин Ю. В.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Нарисна геометрія та комп'ютерна графіка</td>
+                        <td>100</td>
+                        <td>Федченко А. В.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Об'єктно-орієнтоване програмування</td>
+                        <td>100</td>
+                        <td>Водка А. А.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Іноземна мова</td>
+                        <td>99</td>
+                        <td>Басов В. В.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Правознавство</td>
+                        <td>100</td>
+                        <td>Семко М. А.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Фізичне виховання</td>
+                        <td>100</td>
+                        <td>Ширяева С. В.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row" id="favourite-films">
+            <div class="col-12">
+                <h3>
+                    Любимые фильмы
+                </h3>
+            </div>
+        </div>
+        <div class="row films">
+            <div class="col-12 col-sm-6 no-padding">
+                <ol>
+                    <li class="activ-li film-li"><a href="https://www.ivi.ru/watch/97244">Адвокат Дьявола</a></li>
+                    <li class="film-li"><a href="https://www.ivi.ru/watch/90237">Запах женщины</a></li>
+                    <li class="film-li"><a href="https://www.ivi.ru/watch/60690">Книга Илая</a></li>
+                    <li class="film-li"><a href="https://www.ivi.ru/watch/105945">Эквилибриум</a></li>
+                    <li class="film-li"><a href="https://www.ivi.ru/watch/98382">Джанго освобождённый</a></li>
+                </ol>
+            </div>
+            <div class="col-12 col-sm-6 no-padding">
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="img/devils-advocate.jpg" alt="devils-advocate">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="img/scent.jpg" alt="scent">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="img/book.jpg" alt="book">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="img/1984.jpg" alt="1984">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="img/django.jpg" alt="django">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Предыдущий</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Следующий</span>
+                    </a>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 id="my-city">
+                    Харьков
+                </h3>
+            </div>
+        </div>
+        <div class="row style-changable">
+            <div class="col-12">
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="city">
+                    <h2>Интересные факты</h2>
+                    <ul>
+                        <li>Харьков — самый большой город на 50 параллели</li>
+                        <li>Впервые атомное ядро расщепили в Харькове</li>
+                        <li>Первый трамвай Харькова был конным</li>
+                        <li>Первый в Украине аэропорт был построен в Харькове</li>
+                        <li>Дома в районе 522 построены в виде трех шестерок</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center" id="footer">
+            <div class="col-sm-6">
+                <p>Николай Райваховский, 2020</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="switch-wrap">
+                    <label class="switch">
+                        <input type="checkbox" onclick="changeStyle()" id="check">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p id="mode-label">
+                    Перейти в ночной режим
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

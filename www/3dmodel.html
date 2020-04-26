@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/3dmodel.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico"> 
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+    <title>Любимый проект</title>
+</head>
+<body onload="loadPreparings()">
+    <span id="about-me"></span>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <div class="container-fluid header">
+            <a href="#" class="navbar-brand align-self-center">ME</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">На главную</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>            
+    <div class="container-fluid">
+        <div class="row style-changable model">
+            <div class="col-12">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="A 3D model" width="100%" height="500px" src="https://sketchfab.com/models/0b2bd5fe961e42b584648101e51bd68f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/3d-models/spada-f6-stage-3-72e6f2d4b9cf43efa8acdd5f39793f93?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Spada F6 (Stage 3)</a>
+                        by <a href="https://sketchfab.com/scudmorello?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Scuderia Morello</a>
+                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center" id="footer">
+            <div class="col-sm-6">
+                <p>Николай Райваховский, 2020</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="switch-wrap">
+                    <label class="switch">
+                        <input type="checkbox" onclick="changeStyle()" id="check">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <p id="mode-label">
+                    Перейти в ночной режим
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

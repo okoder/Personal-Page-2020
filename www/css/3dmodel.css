@@ -1,0 +1,12 @@
+.model{
+    min-height: 90vh;
+}
+
+body{
+    min-height: 100%;
+    min-width: 350px;
+}
+
+#footer{
+    bottom: 0;
+}
